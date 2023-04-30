@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Sdarot next episode",
+	"version": "1.0",
+	"description": "מתחיל את הפרק הבא שלא ראית בסדרה",
+	"permissions": 
+	[
+    "debugger",
+	"tabs"
+	],
+	"content_scripts": [
+	{
+		"matches": ["*://*/watch/*"],
+		"js": [
+		"main.js"
+		]
+	} ]
+	
+}
